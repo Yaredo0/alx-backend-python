@@ -6,7 +6,7 @@ def stream_users_in_batches(batch_size):
         connection = psycopg2.connect(
             dbname="alx_prodev",
             user="postgres",
-            password="yared@pgdb",
+            password="",
             host="localhost"
         )
         cursor = connection.cursor(cursor_factory=psycopg2.extras.DictCursor)
